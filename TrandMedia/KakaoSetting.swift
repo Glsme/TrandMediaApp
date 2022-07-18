@@ -8,8 +8,8 @@
 import Foundation
 
 // setting section
-enum KakaoSetting {
-    case wholeSetting
-    case personalSetting
-    case etcSetting
+enum KakaoSetting: Int {
+    case wholeSetting = 0
+    case personalSetting = 1
+    case etcSetting = 2
 }

@@ -20,11 +20,11 @@ class KakaoSettingTableViewController: UITableViewController {
     // Header
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
-        case 0:
+        case KakaoSetting.wholeSetting.rawValue:
             return "전체 설정"
-        case 1:
+        case KakaoSetting.personalSetting.rawValue:
             return "개인 설정"
-        case 2:
+        case KakaoSetting.etcSetting.rawValue:
             return "기타"
         default:
             return "error"
@@ -44,11 +44,11 @@ class KakaoSettingTableViewController: UITableViewController {
     // cell count
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
-        case 0:
+        case KakaoSetting.wholeSetting.rawValue:
             return wholeSetting.count
-        case 1:
+        case KakaoSetting.personalSetting.rawValue:
             return personalSetting.count
-        case 2:
+        case KakaoSetting.etcSetting.rawValue:
             return etcSetting.count
         default:
             return 0
@@ -60,19 +60,15 @@ class KakaoSettingTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell")!
         
         switch indexPath.section {
-        case 0:
+        case KakaoSetting.wholeSetting.rawValue:
             cell.textLabel?.text = wholeSetting[indexPath.row]
-        case 1:
+        case KakaoSetting.personalSetting.rawValue:
             cell.textLabel?.text = personalSetting[indexPath.row]
-        case 2:
+        case KakaoSetting.etcSetting.rawValue:
             cell.textLabel?.text = etcSetting[indexPath.row]
         default:
             break
         }
-//        cell.textLabel?.text = "aaa"
-//        cell.textLabel?.textColor = .black
-//        cell.textLabel?.font = .systemFont(ofSize: 12, weight: .regular)
-        
         
         return cell
     }
