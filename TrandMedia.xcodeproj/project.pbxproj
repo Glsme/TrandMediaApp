@@ -16,6 +16,8 @@
 		85AA23182884F10C00DAB425 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AA23172884F10C00DAB425 /* Home.storyboard */; };
 		85AA231A2884FE4300DAB425 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23192884FE4300DAB425 /* SettingTableViewController.swift */; };
 		85AA231C28852DDE00DAB425 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AA231B28852DDE00DAB425 /* Setting.storyboard */; };
+		85AA231E2885371F00DAB425 /* KakaoSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA231D2885371F00DAB425 /* KakaoSettingTableViewController.swift */; };
+		85AA232028853B5600DAB425 /* KakaoSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA231F28853B5600DAB425 /* KakaoSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		85AA23172884F10C00DAB425 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		85AA23192884FE4300DAB425 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		85AA231B28852DDE00DAB425 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		85AA231D2885371F00DAB425 /* KakaoSettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSettingTableViewController.swift; sourceTree = "<group>"; };
+		85AA231F28853B5600DAB425 /* KakaoSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				85AA23092884DDDD00DAB425 /* Main.storyboard */,
 				85AA23172884F10C00DAB425 /* Home.storyboard */,
 				85AA231B28852DDE00DAB425 /* Setting.storyboard */,
+				85AA231D2885371F00DAB425 /* KakaoSettingTableViewController.swift */,
+				85AA231F28853B5600DAB425 /* KakaoSetting.swift */,
 				85AA23192884FE4300DAB425 /* SettingTableViewController.swift */,
 				85AA230C2884DDDE00DAB425 /* Assets.xcassets */,
 				85AA230E2884DDDE00DAB425 /* LaunchScreen.storyboard */,
@@ -149,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AA232028853B5600DAB425 /* KakaoSetting.swift in Sources */,
 				85AA231A2884FE4300DAB425 /* SettingTableViewController.swift in Sources */,
 				85AA23082884DDDD00DAB425 /* ViewController.swift in Sources */,
+				85AA231E2885371F00DAB425 /* KakaoSettingTableViewController.swift in Sources */,
 				85AA23042884DDDD00DAB425 /* AppDelegate.swift in Sources */,
 				85AA23062884DDDD00DAB425 /* SceneDelegate.swift in Sources */,
 			);
