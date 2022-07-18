@@ -70,6 +70,8 @@ class KakaoSettingTableViewController: UITableViewController {
             break
         }
         
+        cell.textLabel?.font = .systemFont(ofSize: 12, weight: .regular)
+        
         return cell
     }
 }
