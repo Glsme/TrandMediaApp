@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oi1-XE-CH2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N0F-dO-xIH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -168,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="763.768115942029" y="57.589285714285708"/>
         </scene>
-        <!--Kakao Setting Table View Controller-->
+        <!--설정-->
         <scene sceneID="bYC-kK-wXn">
             <objects>
                 <tableViewController id="Oi1-XE-CH2" customClass="KakaoSettingTableViewController" customModule="TrandMedia" customModuleProvider="target" sceneMemberID="viewController">
@@ -191,10 +191,11 @@
                             <outlet property="delegate" destination="Oi1-XE-CH2" id="e2v-Eq-MOj"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="설정" id="Wcn-Yf-G3N"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtI-68-0Fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1661" y="58"/>
+            <point key="canvasLocation" x="2571.0144927536235" y="57.589285714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fnV-uH-YxG">
@@ -213,6 +214,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZu-vg-cfX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-146.37681159420291" y="57.589285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VDK-uH-U0z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N0F-dO-xIH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5S0-zb-OWM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Oi1-XE-CH2" kind="relationship" relationship="rootViewController" id="tJx-uf-1Du"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oij-rC-MSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660.8695652173915" y="57.589285714285708"/>
         </scene>
     </scenes>
     <resources>
