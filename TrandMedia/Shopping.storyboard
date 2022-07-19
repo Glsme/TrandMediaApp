@@ -15,6 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="4on-dz-hEu">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -24,6 +25,9 @@
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="returnTextField:" destination="1vQ-Ss-HHl" eventType="editingDidEndOnExit" id="Ztp-rp-agP"/>
+                                    </connections>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AS-H8-TDP">
                                     <rect key="frame" x="326" y="20.5" width="50" height="27"/>
@@ -108,7 +112,6 @@
                                     <outlet property="shoppingButton" destination="W2y-zX-aZc" id="iZK-Ow-KHZ"/>
                                     <outlet property="shoppingImageView" destination="Lzs-5n-UAT" id="9lU-Tp-w7e"/>
                                     <outlet property="shoppingLabel" destination="PIs-vV-aFh" id="uiH-JB-Emj"/>
-                                    <outlet property="shoppingUIView" destination="8ZF-Oa-oee" id="gif-Os-cTy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -117,6 +120,9 @@
                             <outlet property="delegate" destination="1vQ-Ss-HHl" id="6kz-gh-0Dl"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="shoppingTextField" destination="a87-ha-oxP" id="b75-VP-d2h"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9P-Zb-8fe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
