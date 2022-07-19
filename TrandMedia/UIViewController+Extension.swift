@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController {
     func setBackgroundColor() {
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
     }
     
     func showAlert() {

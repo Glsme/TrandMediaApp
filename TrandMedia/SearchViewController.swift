@@ -14,6 +14,7 @@ class SearchViewController: UIViewController {
 
         // 배경색, 카톡 브랜드 컬러
         setBackgroundColor()
-        showAlert()
+//        showAlert()
     }
+    
 }
