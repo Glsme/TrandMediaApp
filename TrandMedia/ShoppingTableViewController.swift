@@ -10,8 +10,7 @@ import UIKit
 class ShoppingTableViewController: UITableViewController {
     
     var shoppingList = ["그립톡 구매하기", "사이다 구매", "아이패드 케이스 최저가 알아보기", "양말"]
-
-    @IBOutlet weak var shoppingUIView: UIView!
+    
     @IBOutlet weak var shoppingTextField: UITextField!
     
     override func viewDidLoad() {
