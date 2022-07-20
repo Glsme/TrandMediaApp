@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cWl-te-rRu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20037"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,7 +35,7 @@
                                                 <constraint firstAttribute="width" constant="80" id="R4h-OC-gwq"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivm-Kv-oi4">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="해리포터와 죽음의 성물 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivm-Kv-oi4">
                                             <rect key="frame" x="95" y="11" width="299" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="smm-fO-TuV"/>
@@ -44,7 +44,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM4-uP-KhS">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022.07.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM4-uP-KhS">
                                             <rect key="frame" x="95" y="40" width="299" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="p5g-5U-mrg"/>
@@ -53,8 +53,9 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nC-Gj-Iyz">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nC-Gj-Iyz">
                                             <rect key="frame" x="95" y="71" width="299" height="67"/>
+                                            <string key="text">해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 해리포터와 죽음의 성물 2 </string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -77,10 +78,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="movieDateLabel" destination="zM4-uP-KhS" id="l6d-zy-JcH"/>
-                                    <outlet property="movieImageView" destination="v4f-9p-WJR" id="5jc-cG-hVp"/>
-                                    <outlet property="movieStoryLabel" destination="1nC-Gj-Iyz" id="4Ee-Vg-utu"/>
-                                    <outlet property="movieTitleLabel" destination="Ivm-Kv-oi4" id="4co-fG-z2m"/>
+                                    <outlet property="movieDateLabel" destination="zM4-uP-KhS" id="PHl-4g-8rD"/>
+                                    <outlet property="movieImageView" destination="v4f-9p-WJR" id="b9f-lw-eUY"/>
+                                    <outlet property="movieStoryLabel" destination="1nC-Gj-Iyz" id="ihF-Qo-eCq"/>
+                                    <outlet property="movieTitleLabel" destination="Ivm-Kv-oi4" id="dZZ-Jp-HQf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

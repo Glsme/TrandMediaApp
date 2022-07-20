@@ -14,4 +14,10 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var movieDateLabel: UILabel!
     @IBOutlet weak var movieStoryLabel: UILabel!
     
+    func configureCell(data: Movie) {
+        movieTitleLabel.text = data.movieTitle
+        movieDateLabel.text = "\(data.movieRelease) | \(data.movieRuntime)분 | \(data.movieRate)점"
+        movieStoryLabel.text = data.movieOverView
+        movieStoryLabel.numberOfLines = 3
+    }
 }
