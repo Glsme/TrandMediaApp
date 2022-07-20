@@ -20,37 +20,47 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="무엇을 구매하실 건가요?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a87-ha-oxP">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfY-9u-Wb3">
                                     <rect key="frame" x="20" y="10" width="374" height="48"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hju-po-9uO">
+                                            <rect key="frame" x="314" y="8.5" width="40" height="31"/>
+                                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="31" id="9zg-vw-GKD"/>
+                                                <constraint firstAttribute="width" constant="40" id="iUy-Od-Uue"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="추가">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="무엇을 구매하실 건가요?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJ3-y2-8gR">
+                                            <rect key="frame" x="20" y="7" width="274" height="34"/>
+                                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="returnTextField:" destination="1vQ-Ss-HHl" eventType="editingDidEnd" id="cKm-Tg-YRx"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <action selector="returnTextField:" destination="1vQ-Ss-HHl" eventType="editingDidEndOnExit" id="Ztp-rp-agP"/>
-                                    </connections>
-                                </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AS-H8-TDP">
-                                    <rect key="frame" x="326" y="20.5" width="50" height="27"/>
-                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="50" id="nvZ-Sx-S0R"/>
+                                        <constraint firstAttribute="trailing" secondItem="Hju-po-9uO" secondAttribute="trailing" constant="20" id="4l9-Qr-le2"/>
+                                        <constraint firstItem="Hju-po-9uO" firstAttribute="leading" secondItem="VJ3-y2-8gR" secondAttribute="trailing" constant="20" id="DdB-aR-GqF"/>
+                                        <constraint firstItem="VJ3-y2-8gR" firstAttribute="centerY" secondItem="nfY-9u-Wb3" secondAttribute="centerY" id="aid-A1-2nV"/>
+                                        <constraint firstItem="Hju-po-9uO" firstAttribute="centerY" secondItem="nfY-9u-Wb3" secondAttribute="centerY" id="eyE-WQ-ltq"/>
+                                        <constraint firstItem="VJ3-y2-8gR" firstAttribute="leading" secondItem="nfY-9u-Wb3" secondAttribute="leading" constant="20" id="qGr-Ef-sIn"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="추가">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                </button>
+                                </view>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="3AS-H8-TDP" firstAttribute="centerY" secondItem="a87-ha-oxP" secondAttribute="centerY" id="DRt-fF-NHY"/>
-                                <constraint firstItem="a87-ha-oxP" firstAttribute="top" secondItem="4on-dz-hEu" secondAttribute="top" constant="10" id="FgB-w2-d2O"/>
-                                <constraint firstAttribute="trailingMargin" secondItem="3AS-H8-TDP" secondAttribute="trailing" constant="30" id="JBT-f2-WYU"/>
-                                <constraint firstItem="a87-ha-oxP" firstAttribute="leading" secondItem="4on-dz-hEu" secondAttribute="leading" constant="20" id="JXE-77-myU"/>
-                                <constraint firstItem="a87-ha-oxP" firstAttribute="centerX" secondItem="4on-dz-hEu" secondAttribute="centerX" id="MsX-q5-jLe"/>
-                                <constraint firstItem="a87-ha-oxP" firstAttribute="centerY" secondItem="4on-dz-hEu" secondAttribute="centerY" id="TnA-VE-bl7"/>
-                                <constraint firstAttribute="bottom" secondItem="a87-ha-oxP" secondAttribute="bottom" constant="10" id="Zoc-o4-9wa"/>
-                                <constraint firstAttribute="trailing" secondItem="a87-ha-oxP" secondAttribute="trailing" constant="20" id="nP7-nG-QEC"/>
+                                <constraint firstAttribute="trailing" secondItem="nfY-9u-Wb3" secondAttribute="trailing" constant="20" id="0MY-ks-mDc"/>
+                                <constraint firstAttribute="bottom" secondItem="nfY-9u-Wb3" secondAttribute="bottom" constant="10" id="1OV-qD-51k"/>
+                                <constraint firstItem="nfY-9u-Wb3" firstAttribute="leading" secondItem="4on-dz-hEu" secondAttribute="leading" constant="20" id="Tax-YT-xcc"/>
+                                <constraint firstItem="nfY-9u-Wb3" firstAttribute="top" secondItem="4on-dz-hEu" secondAttribute="top" constant="10" id="wTV-it-Ws2"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -122,7 +132,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="쇼핑" id="nQu-KQ-0fe"/>
                     <connections>
-                        <outlet property="shoppingTextField" destination="a87-ha-oxP" id="b75-VP-d2h"/>
+                        <outlet property="shoppingTextField" destination="VJ3-y2-8gR" id="gBR-f3-3IF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9P-Zb-8fe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

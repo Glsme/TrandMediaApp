@@ -20,6 +20,7 @@
 		856081692886913E0057786E /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856081682886913E0057786E /* ShoppingTableViewCell.swift */; };
 		8560816B2886ABC40057786E /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816A2886ABC40057786E /* SearchTableViewController.swift */; };
 		8560816D2886AC300057786E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816C2886AC300057786E /* SearchTableViewCell.swift */; };
+		8560816F2886B3170057786E /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816E2886B3170057786E /* MovieData.swift */; };
 		85AA23042884DDDD00DAB425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23032884DDDD00DAB425 /* AppDelegate.swift */; };
 		85AA23062884DDDD00DAB425 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23052884DDDD00DAB425 /* SceneDelegate.swift */; };
 		85AA23082884DDDD00DAB425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23072884DDDD00DAB425 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		856081682886913E0057786E /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
 		8560816A2886ABC40057786E /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		8560816C2886AC300057786E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		8560816E2886B3170057786E /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		85AA23002884DDDD00DAB425 /* TrandMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrandMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AA23032884DDDD00DAB425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85AA23052884DDDD00DAB425 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				856081522886402D0057786E /* Search.storyboard */,
 				8560816C2886AC300057786E /* SearchTableViewCell.swift */,
 				8560816A2886ABC40057786E /* SearchTableViewController.swift */,
+				8560816E2886B3170057786E /* MovieData.swift */,
 				8560816428868D570057786E /* Shopping.storyboard */,
 				8560816628868D6C0057786E /* ShoppingTableViewController.swift */,
 				856081682886913E0057786E /* ShoppingTableViewCell.swift */,
@@ -202,6 +205,7 @@
 				85AA232028853B5600DAB425 /* KakaoSetting.swift in Sources */,
 				85AA231A2884FE4300DAB425 /* SettingTableViewController.swift in Sources */,
 				8560816B2886ABC40057786E /* SearchTableViewController.swift in Sources */,
+				8560816F2886B3170057786E /* MovieData.swift in Sources */,
 				85AA23082884DDDD00DAB425 /* ViewController.swift in Sources */,
 				856081692886913E0057786E /* ShoppingTableViewCell.swift in Sources */,
 				8560815F2886478C0057786E /* UITextField+Extension.swift in Sources */,
