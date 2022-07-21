@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8549686F28878C9D00CCC8BD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549686E28878C9D00CCC8BD /* Movie.swift */; };
-		854968712887940700CCC8BD /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854968702887940700CCC8BD /* MovieInfo.swift */; };
 		8549687328879AA600CCC8BD /* RecoomandCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549687228879AA600CCC8BD /* RecoomandCollectionViewController.swift */; };
 		8549687528879DFD00CCC8BD /* RecommandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549687428879DFD00CCC8BD /* RecommandCollectionViewCell.swift */; };
 		854968782887AE4D00CCC8BD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 854968772887AE4D00CCC8BD /* Kingfisher */; };
@@ -27,6 +26,8 @@
 		8560816B2886ABC40057786E /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816A2886ABC40057786E /* SearchTableViewController.swift */; };
 		8560816D2886AC300057786E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816C2886AC300057786E /* SearchTableViewCell.swift */; };
 		8560816F2886B3170057786E /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816E2886B3170057786E /* MovieData.swift */; };
+		8595F11E2888E7450060202B /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F11D2888E7450060202B /* TrendTableViewController.swift */; };
+		8595F1222888F6150060202B /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F1212888F6150060202B /* MovieInfo.swift */; };
 		85AA23042884DDDD00DAB425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23032884DDDD00DAB425 /* AppDelegate.swift */; };
 		85AA23062884DDDD00DAB425 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23052884DDDD00DAB425 /* SceneDelegate.swift */; };
 		85AA23082884DDDD00DAB425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23072884DDDD00DAB425 /* ViewController.swift */; };
@@ -42,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		8549686E28878C9D00CCC8BD /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		854968702887940700CCC8BD /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieInfo.swift; path = "../../강의자료/MovieInfo.swift"; sourceTree = "<group>"; };
 		8549687228879AA600CCC8BD /* RecoomandCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoomandCollectionViewController.swift; sourceTree = "<group>"; };
 		8549687428879DFD00CCC8BD /* RecommandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandCollectionViewCell.swift; sourceTree = "<group>"; };
 		856081522886402D0057786E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 		8560816A2886ABC40057786E /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		8560816C2886AC300057786E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		8560816E2886B3170057786E /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		8595F11D2888E7450060202B /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
+		8595F1212888F6150060202B /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		85AA23002884DDDD00DAB425 /* TrandMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrandMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AA23032884DDDD00DAB425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85AA23052884DDDD00DAB425 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8595F11F2888F5EE0060202B /* Trend */ = {
+			isa = PBXGroup;
+			children = (
+				8549687428879DFD00CCC8BD /* RecommandCollectionViewCell.swift */,
+				8549687228879AA600CCC8BD /* RecoomandCollectionViewController.swift */,
+				8560816228864D950057786E /* BucketListTableViewCell.swift */,
+				8560816028864B980057786E /* BucketListTableViewController.swift */,
+				8595F11D2888E7450060202B /* TrendTableViewController.swift */,
+				85608154288640590057786E /* Trend.storyboard */,
+				85608158288643F30057786E /* TrendViewController.swift */,
+			);
+			path = Trend;
+			sourceTree = "<group>";
+		};
+		8595F1202888F6010060202B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				856081522886402D0057786E /* Search.storyboard */,
+				8560816C2886AC300057786E /* SearchTableViewCell.swift */,
+				8560816A2886ABC40057786E /* SearchTableViewController.swift */,
+				8595F1212888F6150060202B /* MovieInfo.swift */,
+				8549686E28878C9D00CCC8BD /* Movie.swift */,
+				8560816E2886B3170057786E /* MovieData.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8595F1252888F6230060202B /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				8560816428868D570057786E /* Shopping.storyboard */,
+				8560816628868D6C0057786E /* ShoppingTableViewController.swift */,
+				856081682886913E0057786E /* ShoppingTableViewCell.swift */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		8595F1282888F6560060202B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8560815C2886451B0057786E /* UIViewController+Extension.swift */,
+				8560815E2886478C0057786E /* UITextField+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		85AA22F72884DDDD00DAB425 = {
 			isa = PBXGroup;
 			children = (
@@ -106,29 +154,16 @@
 		85AA23022884DDDD00DAB425 /* TrandMedia */ = {
 			isa = PBXGroup;
 			children = (
+				8595F1282888F6560060202B /* Extension */,
+				8595F1252888F6230060202B /* Shopping */,
+				8595F1202888F6010060202B /* Search */,
+				8595F11F2888F5EE0060202B /* Trend */,
 				85AA23032884DDDD00DAB425 /* AppDelegate.swift */,
 				85AA23052884DDDD00DAB425 /* SceneDelegate.swift */,
 				85AA23072884DDDD00DAB425 /* ViewController.swift */,
 				85AA23092884DDDD00DAB425 /* Main.storyboard */,
 				85AA23172884F10C00DAB425 /* Home.storyboard */,
 				85AA231B28852DDE00DAB425 /* Setting.storyboard */,
-				856081522886402D0057786E /* Search.storyboard */,
-				8560816C2886AC300057786E /* SearchTableViewCell.swift */,
-				8560816A2886ABC40057786E /* SearchTableViewController.swift */,
-				854968702887940700CCC8BD /* MovieInfo.swift */,
-				8549686E28878C9D00CCC8BD /* Movie.swift */,
-				8560816E2886B3170057786E /* MovieData.swift */,
-				8560816428868D570057786E /* Shopping.storyboard */,
-				8560816628868D6C0057786E /* ShoppingTableViewController.swift */,
-				856081682886913E0057786E /* ShoppingTableViewCell.swift */,
-				85608154288640590057786E /* Trend.storyboard */,
-				8549687428879DFD00CCC8BD /* RecommandCollectionViewCell.swift */,
-				8549687228879AA600CCC8BD /* RecoomandCollectionViewController.swift */,
-				8560816228864D950057786E /* BucketListTableViewCell.swift */,
-				8560816028864B980057786E /* BucketListTableViewController.swift */,
-				85608158288643F30057786E /* TrendViewController.swift */,
-				8560815C2886451B0057786E /* UIViewController+Extension.swift */,
-				8560815E2886478C0057786E /* UITextField+Extension.swift */,
 				85608156288640820057786E /* Intro.storyboard */,
 				85AA231D2885371F00DAB425 /* KakaoSettingTableViewController.swift */,
 				85AA231F28853B5600DAB425 /* KakaoSetting.swift */,
@@ -227,6 +262,7 @@
 			files = (
 				8560815D2886451B0057786E /* UIViewController+Extension.swift in Sources */,
 				85AA232028853B5600DAB425 /* KakaoSetting.swift in Sources */,
+				8595F11E2888E7450060202B /* TrendTableViewController.swift in Sources */,
 				85AA231A2884FE4300DAB425 /* SettingTableViewController.swift in Sources */,
 				8549687528879DFD00CCC8BD /* RecommandCollectionViewCell.swift in Sources */,
 				8560816B2886ABC40057786E /* SearchTableViewController.swift in Sources */,
@@ -236,8 +272,8 @@
 				856081692886913E0057786E /* ShoppingTableViewCell.swift in Sources */,
 				8560815F2886478C0057786E /* UITextField+Extension.swift in Sources */,
 				8560816728868D6C0057786E /* ShoppingTableViewController.swift in Sources */,
+				8595F1222888F6150060202B /* MovieInfo.swift in Sources */,
 				85AA231E2885371F00DAB425 /* KakaoSettingTableViewController.swift in Sources */,
-				854968712887940700CCC8BD /* MovieInfo.swift in Sources */,
 				8560816D2886AC300057786E /* SearchTableViewCell.swift in Sources */,
 				85608159288643F30057786E /* TrendViewController.swift in Sources */,
 				85AA23042884DDDD00DAB425 /* AppDelegate.swift in Sources */,
