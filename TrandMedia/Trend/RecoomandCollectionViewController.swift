@@ -14,10 +14,17 @@ import Kingfisher
 
 class RecoomandCollectionViewController: UICollectionViewController {
     
+    // 1. 값 전달: 데이터를 받을 공간(프로퍼티) 생성
+    var movieTitle: String?
+    
     var imageURL = "https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20220708_75%2F16572722362230AyHS_JPEG%2Fmovie_image.jpg"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 3. 값 전달 - 프로퍼티를 뷰에 표현
+        
+        title = movieTitle == nil ? "데이터 없음" : movieTitle!
         
         // 컬렉션뷰의 셀 크기, 셀 사이의 간격 등 설정
         let layout = UICollectionViewFlowLayout()

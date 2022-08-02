@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: 테이블뷰 컨트롤러
 class ShoppingTableViewController: UITableViewController {
     
     var shoppingList = ["그립톡 구매하기", "사이다 구매", "아이패드 케이스 최저가 알아보기", "양말"]

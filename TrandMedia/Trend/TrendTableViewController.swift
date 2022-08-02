@@ -20,6 +20,9 @@ class TrendTableViewController: UITableViewController {
         let storyBoard = UIStoryboard(name: "Trend", bundle: nil)
         //2
         let vc = storyBoard.instantiateViewController(withIdentifier: BucketListTableViewController.identifier) as! BucketListTableViewController
+        
+        vc.textPlaceHolder = "영화"
+
         //3
         self.present(vc, animated: true)
     }
@@ -29,6 +32,8 @@ class TrendTableViewController: UITableViewController {
         let storyBoard = UIStoryboard(name: "Trend", bundle: nil)
         //2
         let vc = storyBoard.instantiateViewController(withIdentifier: BucketListTableViewController.identifier) as! BucketListTableViewController
+        
+        vc.textPlaceHolder = "드라마"
         
         //2.5
         vc.modalPresentationStyle = .fullScreen
@@ -41,6 +46,9 @@ class TrendTableViewController: UITableViewController {
         let storyBoard = UIStoryboard(name: "Trend", bundle: nil)
         //2
         let vc = storyBoard.instantiateViewController(withIdentifier: BucketListTableViewController.identifier) as! BucketListTableViewController
+        
+        vc.textPlaceHolder = "도서"
+
         
         let navigationController = UINavigationController(rootViewController: vc)
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85479847288A3FAC00709FD7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85479846288A3FAC00709FD7 /* FirstViewController.swift */; };
 		8549686F28878C9D00CCC8BD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549686E28878C9D00CCC8BD /* Movie.swift */; };
 		8549687328879AA600CCC8BD /* RecoomandCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549687228879AA600CCC8BD /* RecoomandCollectionViewController.swift */; };
 		8549687528879DFD00CCC8BD /* RecommandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549687428879DFD00CCC8BD /* RecommandCollectionViewCell.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85479846288A3FAC00709FD7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		8549686E28878C9D00CCC8BD /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		8549687228879AA600CCC8BD /* RecoomandCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoomandCollectionViewController.swift; sourceTree = "<group>"; };
 		8549687428879DFD00CCC8BD /* RecommandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				8560816028864B980057786E /* BucketListTableViewController.swift */,
 				8595F11D2888E7450060202B /* TrendTableViewController.swift */,
 				85608154288640590057786E /* Trend.storyboard */,
+				85479846288A3FAC00709FD7 /* FirstViewController.swift */,
 				85608158288643F30057786E /* TrendViewController.swift */,
 			);
 			path = Trend;
@@ -281,6 +284,7 @@
 				85AA23062884DDDD00DAB425 /* SceneDelegate.swift in Sources */,
 				8560816128864B980057786E /* BucketListTableViewController.swift in Sources */,
 				8549686F28878C9D00CCC8BD /* Movie.swift in Sources */,
+				85479847288A3FAC00709FD7 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +436,7 @@
 				INFOPLIST_FILE = TrandMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Trend;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,7 +464,7 @@
 				INFOPLIST_FILE = TrandMedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Trend;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
