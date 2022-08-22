@@ -11,5 +11,5 @@ class ShoppingTableViewCell: UITableViewCell {
 
     @IBOutlet weak var shoppingLabel: UILabel!
     @IBOutlet weak var shoppingButton: UIButton!
-    
+
 }

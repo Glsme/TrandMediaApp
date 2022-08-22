@@ -21,15 +21,32 @@ class ShoppingTableViewController: UITableViewController {
         tableView.rowHeight = 44
         
         tasks = localRealm.objects(ShoppingModel.self)
+        print("Realm is located at:", localRealm.configuration.fileURL!)
     }
     
-    @IBAction func returnTextField(_ sender: UITextField) {
+    @IBAction func addButtonClicked(_ sender: UIButton) {
+        print(#function)
         guard let text = shoppingTextField.text else { return }
         let task = ShoppingModel(shoppingContent: text, checking: false, like: false)
         
         try! localRealm.write {
             localRealm.add(task)
             print("Realm Succeed")
+            
+            tableView.reloadData()
+        }
+    }
+    
+    @IBAction func returnTextField(_ sender: UITextField) {
+        print(#function)
+        guard let text = shoppingTextField.text else { return }
+        let task = ShoppingModel(shoppingContent: text, checking: false, like: false)
+        
+        try! localRealm.write {
+            localRealm.add(task)
+            print("Realm Succeed")
+            
+            tableView.reloadData()
         }
         
     }
