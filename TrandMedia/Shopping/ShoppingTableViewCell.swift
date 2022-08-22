@@ -8,8 +8,7 @@
 import UIKit
 
 class ShoppingTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var shoppingImageView: UIImageView!
+
     @IBOutlet weak var shoppingLabel: UILabel!
     @IBOutlet weak var shoppingButton: UIButton!
     

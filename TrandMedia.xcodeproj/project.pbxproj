@@ -29,6 +29,7 @@
 		8560816F2886B3170057786E /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816E2886B3170057786E /* MovieData.swift */; };
 		85788BED28B34DCA008EC5E0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 85788BEC28B34DCA008EC5E0 /* Realm */; };
 		85788BEF28B34DCA008EC5E0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 85788BEE28B34DCA008EC5E0 /* RealmSwift */; };
+		85788BF228B34E71008EC5E0 /* RealmShoppingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85788BF128B34E71008EC5E0 /* RealmShoppingModel.swift */; };
 		8595F11E2888E7450060202B /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F11D2888E7450060202B /* TrendTableViewController.swift */; };
 		8595F1222888F6150060202B /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F1212888F6150060202B /* MovieInfo.swift */; };
 		85AA23042884DDDD00DAB425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23032884DDDD00DAB425 /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 		8560816A2886ABC40057786E /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		8560816C2886AC300057786E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		8560816E2886B3170057786E /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		85788BF128B34E71008EC5E0 /* RealmShoppingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmShoppingModel.swift; sourceTree = "<group>"; };
 		8595F11D2888E7450060202B /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
 		8595F1212888F6150060202B /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		85AA23002884DDDD00DAB425 /* TrandMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrandMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85788BF028B34E60008EC5E0 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				85788BF128B34E71008EC5E0 /* RealmShoppingModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		8595F11F2888F5EE0060202B /* Trend */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +171,7 @@
 		85AA23022884DDDD00DAB425 /* TrandMedia */ = {
 			isa = PBXGroup;
 			children = (
+				85788BF028B34E60008EC5E0 /* Realm */,
 				8595F1282888F6560060202B /* Extension */,
 				8595F1252888F6230060202B /* Shopping */,
 				8595F1202888F6010060202B /* Search */,
@@ -278,6 +289,7 @@
 				8560816B2886ABC40057786E /* SearchTableViewController.swift in Sources */,
 				8560816F2886B3170057786E /* MovieData.swift in Sources */,
 				85AA23082884DDDD00DAB425 /* ViewController.swift in Sources */,
+				85788BF228B34E71008EC5E0 /* RealmShoppingModel.swift in Sources */,
 				8549687328879AA600CCC8BD /* RecoomandCollectionViewController.swift in Sources */,
 				856081692886913E0057786E /* ShoppingTableViewCell.swift in Sources */,
 				8560815F2886478C0057786E /* UITextField+Extension.swift in Sources */,

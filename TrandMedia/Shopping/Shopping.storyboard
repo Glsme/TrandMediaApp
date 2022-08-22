@@ -74,16 +74,8 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZF-Oa-oee">
                                             <rect key="frame" x="20" y="2" width="374" height="45"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lzs-5n-UAT">
-                                                    <rect key="frame" x="8" y="12" width="23" height="20.5"/>
-                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="23" id="4nj-nu-cQa"/>
-                                                        <constraint firstAttribute="height" constant="23" id="mtd-MJ-7Rx"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIs-vV-aFh">
-                                                    <rect key="frame" x="51" y="15.5" width="265" height="14.5"/>
+                                                    <rect key="frame" x="62" y="15.5" width="254" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -98,16 +90,26 @@
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="star" catalog="system"/>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qek-yP-ugD">
+                                                    <rect key="frame" x="10" y="11.5" width="22" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="EZ6-gN-DWT"/>
+                                                        <constraint firstAttribute="width" constant="22" id="Yjz-wQ-hVc"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="checkmark.square" catalog="system"/>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemGray6Color"/>
                                             <constraints>
-                                                <constraint firstItem="Lzs-5n-UAT" firstAttribute="leading" secondItem="8ZF-Oa-oee" secondAttribute="leadingMargin" id="KUr-Zr-7nm"/>
+                                                <constraint firstItem="PIs-vV-aFh" firstAttribute="leading" secondItem="qek-yP-ugD" secondAttribute="trailing" constant="30" id="99r-Ll-yAc"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="W2y-zX-aZc" secondAttribute="trailing" id="Ub8-6i-q9Y"/>
                                                 <constraint firstItem="PIs-vV-aFh" firstAttribute="centerY" secondItem="8ZF-Oa-oee" secondAttribute="centerY" id="XRS-W5-qsb"/>
-                                                <constraint firstItem="PIs-vV-aFh" firstAttribute="leading" secondItem="Lzs-5n-UAT" secondAttribute="trailing" constant="20" id="YDI-1G-L3R"/>
-                                                <constraint firstItem="Lzs-5n-UAT" firstAttribute="centerY" secondItem="8ZF-Oa-oee" secondAttribute="centerY" id="aMs-is-eef"/>
+                                                <constraint firstItem="qek-yP-ugD" firstAttribute="centerY" secondItem="PIs-vV-aFh" secondAttribute="centerY" id="ZQY-db-z5G"/>
                                                 <constraint firstItem="W2y-zX-aZc" firstAttribute="centerY" secondItem="8ZF-Oa-oee" secondAttribute="centerY" id="joI-RQ-nAz"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="PIs-vV-aFh" secondAttribute="trailing" constant="50" id="oWz-PW-0ao"/>
+                                                <constraint firstItem="qek-yP-ugD" firstAttribute="leading" secondItem="8ZF-Oa-oee" secondAttribute="leading" constant="10" id="pDJ-Jx-zV5"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -120,7 +122,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="shoppingButton" destination="W2y-zX-aZc" id="iZK-Ow-KHZ"/>
-                                    <outlet property="shoppingImageView" destination="Lzs-5n-UAT" id="9lU-Tp-w7e"/>
                                     <outlet property="shoppingLabel" destination="PIs-vV-aFh" id="uiH-JB-Emj"/>
                                 </connections>
                             </tableViewCell>

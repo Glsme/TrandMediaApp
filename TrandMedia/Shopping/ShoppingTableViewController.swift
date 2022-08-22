@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 //MARK: 테이블뷰 컨트롤러
 class ShoppingTableViewController: UITableViewController {
