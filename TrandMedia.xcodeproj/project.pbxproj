@@ -27,6 +27,8 @@
 		8560816B2886ABC40057786E /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816A2886ABC40057786E /* SearchTableViewController.swift */; };
 		8560816D2886AC300057786E /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816C2886AC300057786E /* SearchTableViewCell.swift */; };
 		8560816F2886B3170057786E /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560816E2886B3170057786E /* MovieData.swift */; };
+		85788BED28B34DCA008EC5E0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 85788BEC28B34DCA008EC5E0 /* Realm */; };
+		85788BEF28B34DCA008EC5E0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 85788BEE28B34DCA008EC5E0 /* RealmSwift */; };
 		8595F11E2888E7450060202B /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F11D2888E7450060202B /* TrendTableViewController.swift */; };
 		8595F1222888F6150060202B /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F1212888F6150060202B /* MovieInfo.swift */; };
 		85AA23042884DDDD00DAB425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23032884DDDD00DAB425 /* AppDelegate.swift */; };
@@ -83,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85788BEF28B34DCA008EC5E0 /* RealmSwift in Frameworks */,
+				85788BED28B34DCA008EC5E0 /* Realm in Frameworks */,
 				8549687B2887AE5B00CCC8BD /* Toast in Frameworks */,
 				854968782887AE4D00CCC8BD /* Kingfisher in Frameworks */,
 			);
@@ -197,6 +201,8 @@
 			packageProductDependencies = (
 				854968772887AE4D00CCC8BD /* Kingfisher */,
 				8549687A2887AE5B00CCC8BD /* Toast */,
+				85788BEC28B34DCA008EC5E0 /* Realm */,
+				85788BEE28B34DCA008EC5E0 /* RealmSwift */,
 			);
 			productName = TrandMedia;
 			productReference = 85AA23002884DDDD00DAB425 /* TrandMedia.app */;
@@ -229,6 +235,7 @@
 			packageReferences = (
 				854968762887AE4D00CCC8BD /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				854968792887AE5B00CCC8BD /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				85788BEB28B34DCA008EC5E0 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 85AA23012884DDDD00DAB425 /* Products */;
 			projectDirPath = "";
@@ -520,6 +527,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		85788BEB28B34DCA008EC5E0 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -532,6 +547,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 854968792887AE5B00CCC8BD /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
+		};
+		85788BEC28B34DCA008EC5E0 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85788BEB28B34DCA008EC5E0 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		85788BEE28B34DCA008EC5E0 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85788BEB28B34DCA008EC5E0 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

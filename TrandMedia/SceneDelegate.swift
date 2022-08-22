@@ -28,8 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.makeKeyAndVisible()
         } else {
             print("UserDefault false")
-            let sb = UIStoryboard(name: "Trend", bundle: nil)
-            let vc = sb.instantiateViewController(withIdentifier: "TrendTableViewController") as! TrendTableViewController
+            let sb = UIStoryboard(name: "Shopping", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "ShoppingTableViewController") as! ShoppingTableViewController
             
             window?.rootViewController = UINavigationController(rootViewController: vc)
             
