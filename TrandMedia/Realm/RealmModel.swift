@@ -8,10 +8,11 @@
 import Foundation
 import RealmSwift
 
-class RealmShoppingModel: Object {
+class ShoppingModel: Object {
     @Persisted var shoppingContent: String
     @Persisted var checking: Bool
     @Persisted var like: Bool
+    @Persisted(primaryKey: true) var objectId: ObjectId
     
     convenience init(shoppingContent: String, checking: Bool, like: Bool) {
         self.init()

@@ -11,29 +11,36 @@ import RealmSwift
 //MARK: 테이블뷰 컨트롤러
 class ShoppingTableViewController: UITableViewController {
     
-    var shoppingList = ["그립톡 구매하기", "사이다 구매", "아이패드 케이스 최저가 알아보기", "양말"]
-    
     @IBOutlet weak var shoppingTextField: UITextField!
+    
+    let localRealm = try! Realm()
+    var tasks: Results<ShoppingModel>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 44
+        
+        tasks = localRealm.objects(ShoppingModel.self)
     }
     
     @IBAction func returnTextField(_ sender: UITextField) {
-        shoppingList.append(shoppingTextField.text!)
-        tableView.reloadData()
-        shoppingTextField.text = ""
+        guard let text = shoppingTextField.text else { return }
+        let task = ShoppingModel(shoppingContent: text, checking: false, like: false)
+        
+        try! localRealm.write {
+            localRealm.add(task)
+            print("Realm Succeed")
+        }
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shoppingList.count
+        return tasks.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingTableViewCell", for: indexPath) as! ShoppingTableViewCell
-        cell.shoppingLabel.text = shoppingList[indexPath.row]
-        cell.shoppingLabel.font = .systemFont(ofSize: 12, weight: .regular)
+        cell.shoppingLabel.text = tasks[indexPath.row].shoppingContent
         
         return cell
     }
