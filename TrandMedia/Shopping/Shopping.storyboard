@@ -93,7 +93,7 @@
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="star" catalog="system"/>
                                                     <connections>
-                                                        <action selector="likeButtonClicked:" destination="1vQ-Ss-HHl" eventType="touchUpInside" id="ixt-C5-dCs"/>
+                                                        <action selector="likeButtonClicked:" destination="ZLy-B8-ua1" eventType="touchUpInside" id="eGo-ko-oi3"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qek-yP-ugD">
@@ -105,6 +105,9 @@
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="checkmark.square" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="checkButtonClicked:" destination="ZLy-B8-ua1" eventType="touchUpInside" id="mjr-zW-Thg"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -127,7 +130,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="shoppingButton" destination="W2y-zX-aZc" id="iZK-Ow-KHZ"/>
+                                    <outlet property="checkButton" destination="qek-yP-ugD" id="TVb-Nc-h5u"/>
+                                    <outlet property="likeButton" destination="W2y-zX-aZc" id="xM6-D0-j1L"/>
                                     <outlet property="shoppingLabel" destination="PIs-vV-aFh" id="uiH-JB-Emj"/>
                                 </connections>
                             </tableViewCell>

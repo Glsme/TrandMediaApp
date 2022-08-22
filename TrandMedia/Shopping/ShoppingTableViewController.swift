@@ -48,7 +48,6 @@ class ShoppingTableViewController: UITableViewController {
             
             tableView.reloadData()
         }
-        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
