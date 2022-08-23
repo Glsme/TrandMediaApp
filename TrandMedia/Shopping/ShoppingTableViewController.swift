@@ -60,4 +60,16 @@ class ShoppingTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if let task = tasks?[indexPath.row] {
+                try! localRealm.write {
+                    localRealm.delete(task)
+                    print("delete Succeed")
+                }
+            }
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
