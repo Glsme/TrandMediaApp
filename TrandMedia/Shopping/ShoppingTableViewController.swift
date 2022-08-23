@@ -18,8 +18,15 @@ class ShoppingTableViewController: UITableViewController {
     
     var menuItems: [UIAction] {
         return [
-            UIAction(title: "즐겨찾기순으로 정렬", image: UIImage(systemName: "star"), handler: { _ in }),
-            UIAction(title: "제목순으로 정렬", image: UIImage(systemName: "pencil"), handler: {_ in })
+            UIAction(title: "즐겨찾기순으로 정렬", image: UIImage(systemName: "star"), handler: { _ in
+                self.sortLikeFirst()
+            }),
+            UIAction(title: "제목순으로 정렬", image: UIImage(systemName: "pencil"), handler: {_ in
+                self.sortContentFirst()
+            }),
+            UIAction(title: "체크순으로 정렬", image: UIImage(systemName: "checkmark"), handler: {_ in
+                self.sortCheckFirst()
+            })
         ]
     }
     
@@ -49,6 +56,21 @@ class ShoppingTableViewController: UITableViewController {
             self.shoppingTextField.text = nil
             tableView.reloadData()
         }
+    }
+    
+    func sortLikeFirst() {
+        tasks = localRealm.objects(ShoppingModel.self).sorted(byKeyPath: "like", ascending: false)
+        tableView.reloadData()
+    }
+    
+    func sortCheckFirst() {
+        tasks = localRealm.objects(ShoppingModel.self).sorted(byKeyPath: "checking", ascending: false)
+        tableView.reloadData()
+    }
+    
+    func sortContentFirst() {
+        tasks = localRealm.objects(ShoppingModel.self).sorted(byKeyPath: "shoppingContent", ascending: true)
+        tableView.reloadData()
     }
     
     @IBAction func returnTextField(_ sender: UITextField) {
