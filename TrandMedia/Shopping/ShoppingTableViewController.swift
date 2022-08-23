@@ -16,12 +16,25 @@ class ShoppingTableViewController: UITableViewController {
     let localRealm = try! Realm()
     var tasks: Results<ShoppingModel>!
     
+    var menuItems: [UIAction] {
+        return [
+            UIAction(title: "즐겨찾기순으로 정렬", image: UIImage(systemName: "star"), handler: { _ in }),
+            UIAction(title: "제목순으로 정렬", image: UIImage(systemName: "pencil"), handler: {_ in })
+        ]
+    }
+    
+    var menu: UIMenu {
+        return UIMenu(title: "", image: nil, identifier: nil, options: [], children: menuItems)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 44
         
         tasks = localRealm.objects(ShoppingModel.self)
         print("Realm is located at:", localRealm.configuration.fileURL!)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis.circle"), primaryAction: nil, menu: menu)
+        self.navigationItem.rightBarButtonItem?.tintColor = .black
     }
     
     @IBAction func addButtonClicked(_ sender: UIButton) {
