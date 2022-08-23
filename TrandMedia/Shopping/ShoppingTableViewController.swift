@@ -33,6 +33,7 @@ class ShoppingTableViewController: UITableViewController {
             localRealm.add(task)
             print("Realm Succeed")
             
+            self.shoppingTextField.text = nil
             tableView.reloadData()
         }
     }
@@ -45,7 +46,8 @@ class ShoppingTableViewController: UITableViewController {
         try! localRealm.write {
             localRealm.add(task)
             print("Realm Succeed")
-            
+            self.shoppingTextField.text = nil
+
             tableView.reloadData()
         }
     }
@@ -57,6 +59,17 @@ class ShoppingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingTableViewCell", for: indexPath) as! ShoppingTableViewCell
         cell.shoppingLabel.text = tasks[indexPath.row].shoppingContent
+        
+        cell.checkButton.tag = indexPath.row
+        cell.checkButton.addTarget(self, action: #selector(checkButtonClicked(_:)), for: .touchUpInside)
+        cell.likeButton.tag = indexPath.row
+        cell.likeButton.addTarget(self, action: #selector(likebuttonClicked(_:)), for: .touchUpInside)
+        
+        let checkBox = tasks[indexPath.row].checking ? "checkmark.square.fill" : "checkmark.square"
+        cell.checkButton.setImage(UIImage(systemName: checkBox), for: .normal)
+        
+        let star = tasks[indexPath.row].like ? "star.fill" : "star"
+        cell.likeButton.setImage(UIImage(systemName: star), for: .normal)
         
         return cell
     }
@@ -70,6 +83,28 @@ class ShoppingTableViewController: UITableViewController {
                 }
             }
             tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
+    @objc func checkButtonClicked(_ sender: UIButton) {
+        print(#function, sender.tag)
+        
+        try! localRealm.write {
+            tasks[sender.tag].checking = !tasks[sender.tag].checking
+            
+            let image = tasks[sender.tag].checking ? "checkmark.square.fill" : "checkmark.square"
+            sender.setImage(UIImage(systemName: image), for: .normal)
+        }
+    }
+    
+    @objc func likebuttonClicked(_ sender: UIButton) {
+        print(#function, sender.tag)
+        
+        try! localRealm.write {
+            tasks[sender.tag].like = !tasks[sender.tag].like
+            
+            let image = tasks[sender.tag].like ? "star.fill" : "star"
+            sender.setImage(UIImage(systemName: image), for: .normal)
         }
     }
 }
