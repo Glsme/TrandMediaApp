@@ -46,7 +46,16 @@ class ShoppingTableViewController: UITableViewController {
     func configureUI() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis.circle"), primaryAction: nil, menu: menu)
         self.navigationItem.rightBarButtonItem?.tintColor = .black
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .plain, target: self, action: #selector(settingButtonClicked))
+        self.navigationItem.leftBarButtonItem?.tintColor = .black
         tableView.rowHeight = 120
+    }
+    
+    @objc func settingButtonClicked() {
+        let sb = UIStoryboard(name: "ShoppingSetting", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "ShoppingSettingViewController")
+        
+        present(vc, animated: true)
     }
     
     @IBAction func addButtonClicked(_ sender: UIButton) {
