@@ -105,6 +105,13 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
+		85788C0F28B601F2008EC5E0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		8595F11F2888F5EE0060202B /* Trend */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +143,7 @@
 		8595F1252888F6230060202B /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
+				85788C0F28B601F2008EC5E0 /* Detail */,
 				8560816428868D570057786E /* Shopping.storyboard */,
 				8560816628868D6C0057786E /* ShoppingTableViewController.swift */,
 				856081682886913E0057786E /* ShoppingTableViewCell.swift */,

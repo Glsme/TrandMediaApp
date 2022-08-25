@@ -36,12 +36,17 @@ class ShoppingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 44
+        
+        configureUI()
         
         tasks = localRealm.objects(ShoppingModel.self)
         print("Realm is located at:", localRealm.configuration.fileURL!)
+    }
+    
+    func configureUI() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "ellipsis.circle"), primaryAction: nil, menu: menu)
         self.navigationItem.rightBarButtonItem?.tintColor = .black
+        tableView.rowHeight = 120
     }
     
     @IBAction func addButtonClicked(_ sender: UIButton) {
