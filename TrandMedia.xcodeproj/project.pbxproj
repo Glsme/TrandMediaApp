@@ -30,6 +30,8 @@
 		85788BED28B34DCA008EC5E0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 85788BEC28B34DCA008EC5E0 /* Realm */; };
 		85788BEF28B34DCA008EC5E0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 85788BEE28B34DCA008EC5E0 /* RealmSwift */; };
 		85788BF228B34E71008EC5E0 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85788BF128B34E71008EC5E0 /* RealmModel.swift */; };
+		857A178E28B76D1F0048D81A /* ShoppingDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A178D28B76D1F0048D81A /* ShoppingDetail.storyboard */; };
+		857A179028B76D2E0048D81A /* ShoppingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A178F28B76D2E0048D81A /* ShoppingDetailViewController.swift */; };
 		8595F11E2888E7450060202B /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F11D2888E7450060202B /* TrendTableViewController.swift */; };
 		8595F1222888F6150060202B /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F1212888F6150060202B /* MovieInfo.swift */; };
 		85AA23042884DDDD00DAB425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23032884DDDD00DAB425 /* AppDelegate.swift */; };
@@ -65,6 +67,8 @@
 		8560816C2886AC300057786E /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		8560816E2886B3170057786E /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		85788BF128B34E71008EC5E0 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		857A178D28B76D1F0048D81A /* ShoppingDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingDetail.storyboard; sourceTree = "<group>"; };
+		857A178F28B76D2E0048D81A /* ShoppingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingDetailViewController.swift; sourceTree = "<group>"; };
 		8595F11D2888E7450060202B /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
 		8595F1212888F6150060202B /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		85AA23002884DDDD00DAB425 /* TrandMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrandMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,11 +109,19 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
-		85788C0F28B601F2008EC5E0 /* Detail */ = {
+		857A177E28B76A940048D81A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				857A177F28B76AD00048D81A /* CustomView */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		857A177F28B76AD00048D81A /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Detail;
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		8595F11F2888F5EE0060202B /* Trend */ = {
@@ -143,7 +155,8 @@
 		8595F1252888F6230060202B /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
-				85788C0F28B601F2008EC5E0 /* Detail */,
+				857A178D28B76D1F0048D81A /* ShoppingDetail.storyboard */,
+				857A178F28B76D2E0048D81A /* ShoppingDetailViewController.swift */,
 				8560816428868D570057786E /* Shopping.storyboard */,
 				8560816628868D6C0057786E /* ShoppingTableViewController.swift */,
 				856081682886913E0057786E /* ShoppingTableViewCell.swift */,
@@ -179,6 +192,7 @@
 		85AA23022884DDDD00DAB425 /* TrandMedia */ = {
 			isa = PBXGroup;
 			children = (
+				857A177E28B76A940048D81A /* Utility */,
 				85788BF028B34E60008EC5E0 /* Realm */,
 				8595F1282888F6560060202B /* Extension */,
 				8595F1252888F6230060202B /* Shopping */,
@@ -271,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85608155288640590057786E /* Trend.storyboard in Resources */,
+				857A178E28B76D1F0048D81A /* ShoppingDetail.storyboard in Resources */,
 				85AA23102884DDDE00DAB425 /* LaunchScreen.storyboard in Resources */,
 				85AA230D2884DDDE00DAB425 /* Assets.xcassets in Resources */,
 				85608157288640820057786E /* Intro.storyboard in Resources */,
@@ -308,6 +323,7 @@
 				85608159288643F30057786E /* TrendViewController.swift in Sources */,
 				85AA23042884DDDD00DAB425 /* AppDelegate.swift in Sources */,
 				8560816328864D950057786E /* BucketListTableViewCell.swift in Sources */,
+				857A179028B76D2E0048D81A /* ShoppingDetailViewController.swift in Sources */,
 				85AA23062884DDDD00DAB425 /* SceneDelegate.swift in Sources */,
 				8560816128864B980057786E /* BucketListTableViewController.swift in Sources */,
 				8549686F28878C9D00CCC8BD /* Movie.swift in Sources */,

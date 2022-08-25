@@ -114,6 +114,13 @@ class ShoppingTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "ShoppingDetail", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: ShoppingDetailViewController.identifier)
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             if let task = tasks?[indexPath.row] {
