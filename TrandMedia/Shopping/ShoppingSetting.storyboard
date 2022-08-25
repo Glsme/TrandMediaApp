@@ -24,12 +24,18 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="백업"/>
+                                <connections>
+                                    <action selector="backupButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Bwd-za-D33"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbT-xw-gK9">
                                 <rect key="frame" x="249" y="94" width="145" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.79959207460000004" blue="0.9281850962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="복구"/>
+                                <connections>
+                                    <action selector="restoreButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XyF-Vj-A0P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

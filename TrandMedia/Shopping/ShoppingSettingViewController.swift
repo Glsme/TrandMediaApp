@@ -12,4 +12,13 @@ class ShoppingSettingViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    @IBAction func backupButtonClicked(_ sender: UIButton) {
+        print(#function)
+        
+    }
+    @IBAction func restoreButtonClicked(_ sender: UIButton) {
+        print(#function)
+    }
+    
 }
