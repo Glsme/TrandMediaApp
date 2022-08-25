@@ -32,6 +32,7 @@
 		85788BF228B34E71008EC5E0 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85788BF128B34E71008EC5E0 /* RealmModel.swift */; };
 		857A178E28B76D1F0048D81A /* ShoppingDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A178D28B76D1F0048D81A /* ShoppingDetail.storyboard */; };
 		857A179028B76D2E0048D81A /* ShoppingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A178F28B76D2E0048D81A /* ShoppingDetailViewController.swift */; };
+		857A179228B7A5FF0048D81A /* FileManager_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A179128B7A5FF0048D81A /* FileManager_Extension.swift */; };
 		8595F11E2888E7450060202B /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F11D2888E7450060202B /* TrendTableViewController.swift */; };
 		8595F1222888F6150060202B /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595F1212888F6150060202B /* MovieInfo.swift */; };
 		85AA23042884DDDD00DAB425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AA23032884DDDD00DAB425 /* AppDelegate.swift */; };
@@ -69,6 +70,7 @@
 		85788BF128B34E71008EC5E0 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		857A178D28B76D1F0048D81A /* ShoppingDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingDetail.storyboard; sourceTree = "<group>"; };
 		857A178F28B76D2E0048D81A /* ShoppingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingDetailViewController.swift; sourceTree = "<group>"; };
+		857A179128B7A5FF0048D81A /* FileManager_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager_Extension.swift; sourceTree = "<group>"; };
 		8595F11D2888E7450060202B /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
 		8595F1212888F6150060202B /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		85AA23002884DDDD00DAB425 /* TrandMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrandMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 			children = (
 				8560815C2886451B0057786E /* UIViewController+Extension.swift */,
 				8560815E2886478C0057786E /* UITextField+Extension.swift */,
+				857A179128B7A5FF0048D81A /* FileManager_Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				8560815D2886451B0057786E /* UIViewController+Extension.swift in Sources */,
 				85AA232028853B5600DAB425 /* KakaoSetting.swift in Sources */,
 				8595F11E2888E7450060202B /* TrendTableViewController.swift in Sources */,
+				857A179228B7A5FF0048D81A /* FileManager_Extension.swift in Sources */,
 				85AA231A2884FE4300DAB425 /* SettingTableViewController.swift in Sources */,
 				8549687528879DFD00CCC8BD /* RecommandCollectionViewCell.swift in Sources */,
 				8560816B2886ABC40057786E /* SearchTableViewController.swift in Sources */,

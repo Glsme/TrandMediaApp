@@ -116,7 +116,10 @@ class ShoppingTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "ShoppingDetail", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: ShoppingDetailViewController.identifier)
+        guard let vc = sb.instantiateViewController(withIdentifier: ShoppingDetailViewController.identifier) as? ShoppingDetailViewController else { return }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingTableViewCell", for: indexPath) as! ShoppingTableViewCell
+        
+//        vc.shoppingTextField.text! = cell.shoppingLabel.text
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
