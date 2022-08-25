@@ -104,13 +104,26 @@ extension ShoppingSettingViewController: UIDocumentPickerDelegate {
                 try Zip.unzipFile(fileURL, destination: path, overwrite: true, password: nil, progress: { progress in
                     
                 }, fileOutputHandler: { unzippedFile in
-                    self.view.makeToast("복구완료!")
-                    
-                    self.dismiss(animated: true)
+                    self.view.makeToast("복구완료! \n잠시 후 앱이 다시 실행됩니다.")
+                    sleep(1)
+                    self.restartApp()
+//                    self.dismiss(animated: true)
                 })
             } catch {
                 self.view.makeToast("압축 해제에 실패했습니다.")
             }
         }
+    }
+    
+    func restartApp() {
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let sceneDelegate = windowScene?.delegate as? SceneDelegate
+        
+        let sb = UIStoryboard(name: "Shopping", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "ShoppingTableViewController") as! ShoppingTableViewController
+        let navi = UINavigationController(rootViewController: vc)
+        
+        sceneDelegate?.window?.rootViewController = navi
+        sceneDelegate?.window?.makeKeyAndVisible()
     }
 }
